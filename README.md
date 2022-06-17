@@ -1,6 +1,8 @@
 # Whereby Demo
 Learn how to embed live video calls on your websites easily using Whereby's API!
 
+![demo](https://cdn.hashnode.com/res/hashnode/image/upload/v1655478281706/ST6Oy6NMFY.gif)
+
 ### Tutorial
 To learn how to build this, please visit https://lo-victoria.com/how-to-embed-live-video-chats-via-whereby-embedded
 
