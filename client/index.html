@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Whereby Demo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Whereby Demo</h1>
+        <button id="create-room">Click here to create a meeting room</button>
+    </div>
+    <script>
+        document.getElementById("create-room").addEventListener("click", () => {
+            fetch("/create-room", {
+                method: "POST"
+            }).then(res => {
+                return res.json();
+            }).then(data => {
+                console.log(`RoomUrl is: ${data}`);
+                embedVideoCall(data);
+            })
+        })
+
+        function embedVideoCall(roomUrl) {
+            document.querySelector(".container").insertAdjacentHTML('beforeend', 
+            `<iframe src="${roomUrl}" allow="camera; microphone; fullscreen; speaker; display-capture" width="900px" height="650px"></iframe>`);
+        }
+    </script>
+</body>
+</html>

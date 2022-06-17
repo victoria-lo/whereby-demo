@@ -1,0 +1,17 @@
+{
+  "name": "whereby-demo",
+  "version": "1.0.0",
+  "description": "Whereby Demo App",
+  "main": "index.js",
+  "dependencies": {
+    "cross-fetch": "^3.1.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
